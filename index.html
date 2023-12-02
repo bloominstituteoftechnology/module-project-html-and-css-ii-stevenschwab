@@ -140,9 +140,9 @@
     /* 👉 Task 12- Target all divs directly nested inside elements with a class of email,
     and make them display as inline-block elements.
     This will make each email render all its details in the same line*/
-    .email > div {
+    /*.email > div {
       display: inline-block
-    }
+    }*/
 
     /* 👉 Task 13- Target the elements with a class of email.
     Give them some padding, bigger padding to the left, and a bottom border of very light grey. */
@@ -170,6 +170,14 @@
     This will make it look "unread". */
     #emails > :nth-child(2) {
       font-weight: bold;
+    }
+
+    .email {
+      display: flex;
+    }
+
+    .email-separator {
+      border: 1px solid lightgrey;
     }
 
     /* Well done! Check the design file to make sure you are close enough. */
@@ -215,6 +223,7 @@
         <div class="email-date">Feb 28</div>
         <div class="email-size">16 KB</div>
       </div>
+      <div class="email-separator"></div>
     </main>
   </div>
 
